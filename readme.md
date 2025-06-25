@@ -25,15 +25,16 @@ docker-compose up --build
 ### http://localhost:8080/service2/hello	Hello from Service 2
 
 ### Bonus Implemented
-### Path-based routing via NGINX
 
-### Request logging with timestamp and user-agent in access.log
+### -Path-based routing via NGINX
 
-### Health checks defined in docker-compose.yml.
+### -Request logging with timestamp and user-agent in access.log
 
-### Modular Docker setup with separate Dockerfiles per service.
+### -Health checks defined in docker-compose.yml.
 
-### Bridge networking used.
+### -Modular Docker setup with separate Dockerfiles per service.
+
+### -Bridge networking used.
 
 ### Logs
 ### You can view logs using:
