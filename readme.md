@@ -15,33 +15,30 @@ This project sets up a Docker-based system with two backend services and an NGIN
 docker-compose up --build
 ```
 
-## Access the Services
-## Once running, access them via browser or curl:
+### Access the Services
+### Once running, access them via browser or curl:
 
-# Route	Description
-# http://localhost:8080/service1/ping	Ping endpoint (Go app)
-# http://localhost:8080/service1/hello	Hello from Service 1
-# http://localhost:8080/service2/ping	Ping endpoint (Flask app)
-# http://localhost:8080/service2/hello	Hello from Service 2
+### RouteDescription
+### http://localhost:8080/service1/ping	Ping endpoint (Go app)
+### http://localhost:8080/service1/hello	Hello from Service 1
+### http://localhost:8080/service2/ping	Ping endpoint (Flask app)
+### http://localhost:8080/service2/hello	Hello from Service 2
 
-# Bonus Implemented
-#  Path-based routing via NGINX
+### Bonus Implemented
+### Path-based routing via NGINX
 
-#  Request logging with timestamp and user-agent in access.log
+### Request logging with timestamp and user-agent in access.log
 
-#  Health checks defined in docker-compose.yml.
+### Health checks defined in docker-compose.yml.
 
-#  Modular Docker setup with separate Dockerfiles per service.
+### Modular Docker setup with separate Dockerfiles per service.
 
-#  Bridge networking used.
+### Bridge networking used.
 
-# Logs
-# You can view logs using:
-
- #bash
-
-
-```bash
+### Logs
+### You can view logs using:
+### bash
+```
 docker-compose logs nginx
 ```
 
