@@ -1,10 +1,10 @@
-# 🚀 DevOps Internship Assignment – NGINX Reverse Proxy with Docker Compose
+#  DevOps Internship Assignment – NGINX Reverse Proxy with Docker Compose
 
 This project sets up a Docker-based system with two backend services and an NGINX reverse proxy. It uses Docker Compose to orchestrate all services, with logging, path-based routing, and health checks.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 .
 ├── docker-compose.yml
 ├── nginx/
@@ -19,17 +19,15 @@ This project sets up a Docker-based system with two backend services and an NGIN
 │ ├── Dockerfile
 │ └── README.md
 └── README.md # This file
-
-
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
-### 🔧 Prerequisites:
+###  Prerequisites:
 - Docker
 - Docker Compose
 
-### 🔥 Start All Services:
+###  Start All Services:
 
 ```bash
 docker-compose up --build
@@ -44,13 +42,23 @@ docker-compose up --build
 # http://localhost:8080/service2/hello	Hello from Service 2
 
 # Bonus Implemented
-# ✔️ Path-based routing via NGINX
+#  Path-based routing via NGINX
 
-# ✔️ Request logging with timestamp and user-agent in access.log
+#  Request logging with timestamp and user-agent in access.log
 
-# ✔️ Health checks defined in docker-compose.yml
+#  Health checks defined in docker-compose.yml.
 
-# ✔️ Modular Docker setup with separate Dockerfiles per service
+#  Modular Docker setup with separate Dockerfiles per service.
 
-# ✔️ Bridge networking used (default in Docker Compose)
+#  Bridge networking used.
 
+Logs
+You can view logs using:
+
+```bash
+
+docker-compose logs nginx
+
+
+Example NGINX log format:
+127.0.0.1 - [23/Jun/2025:10:45:21 +0000] "GET /service1/ping" 200 39 "curl/7.68.0"
